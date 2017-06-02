@@ -1,0 +1,130 @@
+<html>
+<!--
+**********************************************************
+Shader name: GLSLLibrary
+Description: contains useful functions for use in shaders.
+ file automatically included in all shader sources.
+**********************************************************
+
+*********
+CHANGELOG
+*********
+Date: March 5th, 2015
+Description: Initial Implementation.
+ Added default float precision, definition for PI and rotateAroundZ
+Author: Joseph Cameron
+
+Date: March 10th, 2015
+Description: Added Vertex and Fragment script elements.
+ These will serve as additional shader include data that is specific
+ to vertex or frag shaders. 
+-->
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+
+<script id="Global" type = "GLSL">
+    //**********
+    // Constants
+    //**********
+    //precision mediump float; //Can be overridden. Specifies default float precision
+    const  float PI = 3.14159265359;
+
+    //**********
+    // Functions
+    //**********
+    //
+    // Function name: rotateAroundX
+    // Arguments: vec4 pos, float degree
+    // Description: rotates a vertex around the x axis
+    // Example: pos = rotateAroundX(pos,_Time);
+    //
+    vec4 rotateAroundX(const  vec4 aPos, const  float aDegree)
+    {
+         float radians = -aDegree * PI/180.0;
+    
+         vec4 rValue = aPos;
+        {
+            //Define rotation matrix
+            mat4 rotationMatrix;
+            rotationMatrix[0][0] = 1.0 ; rotationMatrix[1][0] = 0.0          ; rotationMatrix[2][0] = 0.0           ; rotationMatrix[3][0] = 0.0;
+            rotationMatrix[0][1] = 0.0 ; rotationMatrix[1][1] = cos(radians) ; rotationMatrix[2][1] = -sin(radians) ; rotationMatrix[3][1] = 0.0;
+            rotationMatrix[0][2] = 0.0 ; rotationMatrix[1][2] = sin(radians) ; rotationMatrix[2][2] =  cos(radians) ; rotationMatrix[3][2] = 0.0;
+            rotationMatrix[0][3] = 0.0 ; rotationMatrix[1][3] = 0.0          ; rotationMatrix[2][3] = 0.0           ; rotationMatrix[3][3] = 1.0;
+            
+            //Rotate
+            rValue = rotationMatrix*aPos;
+            
+        }
+        
+        return rValue;
+    
+    }
+    
+    // Function name: rotateAroundY
+    // Arguments: vec4 pos, float degree
+    // Description: rotates a vertex around the y axis
+    // Example: pos = rotateAroundY(pos,_Time);
+    //
+    vec4 rotateAroundY(const   vec4 aPos, const   float aDegree)
+    {
+          float radians = -aDegree * PI/180.0;
+    
+          vec4 rValue = aPos;
+        {
+            //Define rotation matrix
+            mat4 rotationMatrix;
+            rotationMatrix[0][0] = cos(radians) ; rotationMatrix[1][0] = 0.0 ; rotationMatrix[2][0] = sin(radians) ; rotationMatrix[3][0] = 0.0;
+            rotationMatrix[0][1] = 0.0          ; rotationMatrix[1][1] = 1.0 ; rotationMatrix[2][1] = 0.0          ; rotationMatrix[3][1] = 0.0;
+            rotationMatrix[0][2] =-sin(radians) ; rotationMatrix[1][2] = 0.0 ; rotationMatrix[2][2] = cos(radians) ; rotationMatrix[3][2] = 0.0;
+            rotationMatrix[0][3] = 0.0          ; rotationMatrix[1][3] = 0.0 ; rotationMatrix[2][3] = 0.0          ; rotationMatrix[3][3] = 1.0;
+            
+            //Rotate
+            rValue = rotationMatrix*aPos;
+            
+        }
+        
+        return rValue;
+    
+    }
+    
+    // Function name: rotateAroundZ
+    // Arguments: vec4 pos, float degree
+    // Description: rotates a vertex around the z axis
+    // Example: pos = rotateAroundZ(pos,_Time);
+    //
+    vec4 rotateAroundZ(const   vec4 aPos, const   float aDegree)
+    {
+          float radians = -aDegree * PI/180.0;
+    
+          vec4 rValue = aPos;
+        {
+            //Define rotation matrix
+            mat4 rotationMatrix;
+            rotationMatrix[0][0] = cos(radians) ; rotationMatrix[1][0] =-sin(radians) ; rotationMatrix[2][0] = 0.0 ; rotationMatrix[3][0] = 0.0;
+            rotationMatrix[0][1] = sin(radians) ; rotationMatrix[1][1] = cos(radians) ; rotationMatrix[2][1] = 0.0 ; rotationMatrix[3][1] = 0.0;
+            rotationMatrix[0][2] = 0.0          ; rotationMatrix[1][2] = 0.0          ; rotationMatrix[2][2] = 1.0 ; rotationMatrix[3][2] = 0.0;
+            rotationMatrix[0][3] = 0.0          ; rotationMatrix[1][3] = 0.0          ; rotationMatrix[2][3] = 0.0 ; rotationMatrix[3][3] = 1.0;
+            
+            //Rotate
+            rValue = rotationMatrix*aPos;
+            
+        }
+        
+        return rValue;
+    
+    }
+
+</script>
+
+<script id="Vertex" type = "GLSL">
+
+
+</script>
+
+<script id="Fragment" type = "GLSL">
+
+
+</script>
+
+
+</html>

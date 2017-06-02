@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CRender", "CRender.vcxproj", "{69459F3D-7E86-4685-9B5D-669F3065FF1C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A9B5AE8F-89F1-430D-A0E1-CDBC530CBCC6}"
+	ProjectSection(SolutionItems) = preProject
+		License.txt = License.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		PUBLIC_RELEASE|Win32 = PUBLIC_RELEASE|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{69459F3D-7E86-4685-9B5D-669F3065FF1C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{69459F3D-7E86-4685-9B5D-669F3065FF1C}.Debug|Win32.Build.0 = Debug|Win32
+		{69459F3D-7E86-4685-9B5D-669F3065FF1C}.PUBLIC_RELEASE|Win32.ActiveCfg = PUBLIC_RELEASE|Win32
+		{69459F3D-7E86-4685-9B5D-669F3065FF1C}.PUBLIC_RELEASE|Win32.Build.0 = PUBLIC_RELEASE|Win32
+		{69459F3D-7E86-4685-9B5D-669F3065FF1C}.Release|Win32.ActiveCfg = Release|Win32
+		{69459F3D-7E86-4685-9B5D-669F3065FF1C}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

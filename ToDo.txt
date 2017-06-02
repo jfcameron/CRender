@@ -1,0 +1,7 @@
+Consolidate Android entry and windows entry file. Separate files doesnt make sense!!
+Consolidate resource files, textures etc.
+Figure out how to load resources from the common directory when running from ide.
+Add a SCREEN X,Y and updateScreenSize() to graphics.c
+Textures should be read from /Textures not ROOT
+
+Windows: main.c to main.cpp

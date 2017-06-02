@@ -1,0 +1,4 @@
+The Android project makes use of Eclipse + ADK plugin.
+To setup the project you'll have to do two things:
+1) Import the project into eclipse as an android project.
+2) Setup ndk-build dir and jni dir so you can build c/cpp code.

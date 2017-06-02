@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Globals">
+      <UniqueIdentifier>{0e2417c7-23a2-4c50-9cba-2deb982a0871}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics">
+      <UniqueIdentifier>{f478d911-296f-4b9d-bac9-d4117a7191ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Helpers">
+      <UniqueIdentifier>{ca399477-083d-4907-b49a-01b543fac3ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ShaderProgram">
+      <UniqueIdentifier>{94ce0f81-278f-4f55-b560-1400416a259f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\VertexFormat">
+      <UniqueIdentifier>{87a4fc18-d6ca-4467-baac-c2d3a38b223d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Model">
+      <UniqueIdentifier>{159ab023-f9d9-4501-9d2c-603350ba2827}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Time">
+      <UniqueIdentifier>{b94b5280-cde9-44d8-b8b9-fb85460d0707}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\LodePNG">
+      <UniqueIdentifier>{8f51c345-433e-4c6a-b9cb-5b7970b4aba2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Texture">
+      <UniqueIdentifier>{54ae2c8a-bb93-4965-92b7-43d061b1e055}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="notes.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\Source\Globals\Globals.h">
+      <Filter>Source Files\Globals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Source\Graphics\Graphics.h">
+      <Filter>Source Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Source\Helpers\Helpers.h">
+      <Filter>Source Files\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Source\LodePNG\lodepng.h">
+      <Filter>Source Files\LodePNG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Source\Model\Model.h">
+      <Filter>Source Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Source\ShaderProgram\ShaderProgram.h">
+      <Filter>Source Files\ShaderProgram</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Source\Texture\Texture.h">
+      <Filter>Source Files\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Source\Time\Time.h">
+      <Filter>Source Files\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Source\VertexFormat\VertexFormat.h">
+      <Filter>Source Files\VertexFormat</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Common\Source\Globals\Globals.c">
+      <Filter>Source Files\Globals</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Source\Graphics\Graphics.c">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Source\Helpers\Helpers.c">
+      <Filter>Source Files\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Source\LodePNG\lodepng.c">
+      <Filter>Source Files\LodePNG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Source\Time\Time.c">
+      <Filter>Source Files\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Source\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

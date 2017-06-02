@@ -1,0 +1,13 @@
+convert all printf DEBUG to a new function, printTodebugLog, variable definition based on platform.
+Move GL includes to an H file. Dont repeat all that precompiler logic everywhere.
+
+
+Android: rename program entry point to Main.
+make use of GRAPHICS* in Global.h
+
+Move android updates to windows project, fix any issues.
+Move code to a multi IDE project
+
+Android: fix time definition
+Android: fix screen resolution getter
+Windows: fix screen resolution getter

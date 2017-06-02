@@ -1,0 +1,180 @@
+<html>
+
+<!--
+*********************************************************
+Shader name: AlphaCutOff
+Description: colors object with a texture,
+             discards frags with alpha less than 1.
+             Meant for rendering images with transparency
+             that do not require blending.
+*********************************************************
+
+*********
+CHANGELOG
+*********
+Date: March 3rd, 2015
+Description: Initial Implementation
+Author: Joseph Cameron
+    
+-->
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+
+<script id="Vertex" type = "GLSL">
+    //***************
+    // Vertex Formats
+    //***************
+    //VertIn
+    attribute   vec3 a_Pos    ;
+    attribute    vec2 a_UV     ;
+    attribute    vec3 a_Normal ;
+    
+    //FragIn
+    varying   vec2 v_UV     ;
+    varying   vec3 v_Normal ;
+    
+    //*********
+    // Uniforms
+    //*********
+    uniform   float _Time;
+    uniform mat4 _ModelScaleMatrix;
+    uniform mat4 _ModelRotationMatrix;
+    uniform mat4 _Object2WorldMatrix;
+    
+    //MVP
+    uniform mat4 _ModelMatrix;
+    uniform mat4 _ViewMatrix;
+    uniform mat4 _ProjectionMatrix;
+    
+    //******************************
+    // Vertex operation forward decs
+    //******************************
+    //vec4 rotateAroundZ(const vec4 aPos, const float aDegree);
+    
+    //**************
+    // Vertex shader
+    //**************
+    void main()
+    {
+        //Calculate position
+          vec4 position = vec4(a_Pos,1.0);
+        {
+            ////Model space operations     
+            //position *= _ModelScaleMatrix;
+            //
+            //position = rotateAroundY(position, _Time);
+            //
+            //position *= _ModelRotationMatrix;
+            //
+            ////Spin
+            ////position[2] -= 10.0;
+            ////position = rotateAroundY(position,_Time);
+            ////position = rotateAroundX(position,-10.0);
+            //
+            //
+            //
+            ////World space operations
+            //position = _Object2WorldMatrix * position;
+            //position[1] += sin(_Time*0.1)/2.0;
+            //
+            ////Camera space operations
+            //position = _ViewMatrix * position;
+            //
+            ////Perspective space operations
+            //position = _ProjectionMatrix * position;
+            
+            position = rotateAroundZ(position,_Time);
+            position = rotateAroundY(position,_Time*0.5);
+            
+            position = _ModelMatrix * position;
+            position = _ViewMatrix * position;
+            position = _ProjectionMatrix * position;
+            
+        }
+        
+        gl_Position = position;
+        
+        //Passthrough UV
+        v_UV = a_UV;
+        
+    }
+  
+ </script>
+
+<script id="Fragment" type = "GLSL">
+    //Indicate byte size for float type
+    //precision mediump float;
+    
+    //*************************
+    // FragmentIn vertex format
+    //*************************
+    varying   vec2 v_UV;
+    varying   vec3 v_Normal ;
+    
+    //*********
+    // Uniforms
+    //*********
+    uniform   vec4 _Color;
+    uniform sampler2D _Texture;
+    
+    //**********
+    // Constants
+    //**********
+    const float c_AlphaCutOff = 1.0;
+    
+    //*********************************
+    // Fragment operations forward decs
+    //*********************************
+    vec4 calculateTexelColor(const vec4 aFrag);
+    vec4 alphaCutOff(const vec4 aFrag);
+    
+    //out vec4 WorldPosOut; 
+    
+    //*****************
+    // Fragment shader
+    //****************
+    void main()
+    {
+          vec4 rvalue = vec4(0);
+        {
+            rvalue = calculateTexelColor(rvalue);
+            rvalue = alphaCutOff(rvalue);
+            
+        }
+    
+        gl_FragColor = rvalue;
+        //WorldPosOut = rvalue;
+    
+    }
+    
+    //*******************************
+    //Fragment operations definitions
+    //*******************************
+    vec4 calculateTexelColor(const vec4 aFrag)
+    {
+        vec4 rvalue = aFrag;
+        {
+            rvalue = texture2D(_Texture, v_UV);
+            
+        }
+        
+        return rvalue;      
+        
+    }
+    
+    vec4 alphaCutOff(const vec4 aFrag)
+    {
+        vec4 rvalue = aFrag;
+        {
+            if (rvalue[3] < c_AlphaCutOff)
+                discard;  
+                        
+        }
+        
+        return rvalue;
+        
+    }
+    
+  </script>
+
+</html>

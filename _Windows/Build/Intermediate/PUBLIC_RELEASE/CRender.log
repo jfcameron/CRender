@@ -1,0 +1,102 @@
+﻿Build started 6/29/2015 9:34:40 PM.
+     1>Project "C:\Users\Joe\Desktop\asffsa\CRender\_Windows\CRender.vcxproj" on node 2 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(345,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(346,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /IC:\Users\Joe\Desktop\asffsa\CRender\_Windows\\..\Common\Source\Includes /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D _BUILD_WIN32 /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Build/Intermediate/PUBLIC_RELEASE\\" /Fd".\Build/Intermediate/PUBLIC_RELEASE\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt ..\Common\Source\Globals\Globals.c ..\Common\Source\Graphics\Graphics.c ..\Common\Source\Helpers\Helpers.c ..\Common\Source\LodePNG\lodepng.c ..\Common\Source\main.c ..\Common\Source\Time\Time.c
+         Globals.c
+         Graphics.c
+     1>c:\users\joe\desktop\asffsa\crender\common\source\graphics\../Includes/LinMath/linmath.h(51): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\joe\desktop\asffsa\crender\common\source\graphics\../Includes/LinMath/linmath.h(52): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\joe\desktop\asffsa\crender\common\source\graphics\../Includes/LinMath/linmath.h(53): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\joe\desktop\asffsa\crender\common\source\graphics\../Includes/LinMath/linmath.h(336): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\joe\desktop\asffsa\crender\common\source\graphics\../Includes/LinMath/linmath.h(367): warning C4244: 'initializing' : conversion from 'double' to 'const float', possible loss of data
+     1>..\Common\Source\Graphics\Graphics.c(571): warning C4244: 'initializing' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\Common\Source\Graphics\Graphics.c(572): warning C4244: 'initializing' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\Common\Source\Graphics\Graphics.c(575): warning C4244: 'initializing' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\Common\Source\Graphics\Graphics.c(576): warning C4244: 'initializing' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\Common\Source\Graphics\Graphics.c(610): warning C4244: 'initializing' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\Common\Source\Graphics\Graphics.c(611): warning C4244: 'initializing' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\Common\Source\Graphics\Graphics.c(614): warning C4244: 'initializing' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\Common\Source\Graphics\Graphics.c(615): warning C4244: 'initializing' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\Common\Source\Graphics\Graphics.c(620): warning C4244: 'initializing' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\Common\Source\Graphics\Graphics.c(621): warning C4244: 'initializing' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\Common\Source\Graphics\Graphics.c(624): warning C4244: 'initializing' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\Common\Source\Graphics\Graphics.c(625): warning C4244: 'initializing' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\Common\Source\Graphics\Graphics.c(629): warning C4244: 'initializing' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\Common\Source\Graphics\Graphics.c(630): warning C4244: 'initializing' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\Common\Source\Graphics\Graphics.c(631): warning C4244: 'initializing' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\Common\Source\Graphics\Graphics.c(633): warning C4244: 'initializing' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\Common\Source\Graphics\Graphics.c(634): warning C4244: 'initializing' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\Common\Source\Graphics\Graphics.c(635): warning C4244: 'initializing' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\Common\Source\Graphics\Graphics.c(640): warning C4244: 'initializing' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\Common\Source\Graphics\Graphics.c(644): warning C4244: 'initializing' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\Common\Source\Graphics\Graphics.c(645): warning C4244: 'initializing' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\Common\Source\Graphics\Graphics.c(649): warning C4244: 'initializing' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\Common\Source\Graphics\Graphics.c(650): warning C4244: 'initializing' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\Common\Source\Graphics\Graphics.c(651): warning C4244: 'initializing' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\Common\Source\Graphics\Graphics.c(653): warning C4244: 'initializing' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\Common\Source\Graphics\Graphics.c(654): warning C4244: 'initializing' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\Common\Source\Graphics\Graphics.c(655): warning C4244: 'initializing' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\Common\Source\Graphics\Graphics.c(659): warning C4244: 'initializing' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\Common\Source\Graphics\Graphics.c(660): warning C4244: 'initializing' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\Common\Source\Graphics\Graphics.c(661): warning C4244: 'initializing' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\Common\Source\Graphics\Graphics.c(663): warning C4244: 'initializing' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\Common\Source\Graphics\Graphics.c(664): warning C4244: 'initializing' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\Common\Source\Graphics\Graphics.c(665): warning C4244: 'initializing' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\Common\Source\Graphics\Graphics.c(856): warning C4305: 'function' : truncation from 'double' to 'float'
+     1>..\Common\Source\Graphics\Graphics.c(914): warning C4090: 'function' : different 'const' qualifiers
+         Helpers.c
+     1>..\Common\Source\Helpers\Helpers.c(13): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(218) : see declaration of 'fopen'
+     1>..\Common\Source\Helpers\Helpers.c(92): warning C4018: '<' : signed/unsigned mismatch
+         lodepng.c
+         main.c
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\shared\minwindef.h(130): warning C4005: 'APIENTRY' : macro redefinition
+                 C:\Users\Joe\Desktop\asffsa\CRender\Common\Source\Includes\GLFW/glfw3.h(85) : see previous definition of 'APIENTRY'
+     1>..\Common\Source\main.c(75): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\Common\Source\main.c(76): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\Common\Source\main.c(77): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\Common\Source\main.c(78): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\Common\Source\main.c(79): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         Time.c
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Build/PUBLIC_RELEASE\CRender.exe" /NOLOGO /LIBPATH:C:\Users\Joe\Desktop\asffsa\CRender\_Windows\\Lib opengl32.lib glfw3.lib glew32s.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:".\Build/PUBLIC_RELEASE\CRender.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Build/PUBLIC_RELEASE\CRender.lib" /MACHINE:X86 /SAFESEH .\Build/Intermediate/PUBLIC_RELEASE\Globals.obj
+         .\Build/Intermediate/PUBLIC_RELEASE\Graphics.obj
+         .\Build/Intermediate/PUBLIC_RELEASE\Helpers.obj
+         .\Build/Intermediate/PUBLIC_RELEASE\lodepng.obj
+         .\Build/Intermediate/PUBLIC_RELEASE\main.obj
+         .\Build/Intermediate/PUBLIC_RELEASE\Time.obj
+     1>LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+         Generating code
+     1>c:\users\joe\desktop\asffsa\crender\common\source\time\time.c(99): warning C4716: 'deltaTime' : must return a value
+     1>c:\users\joe\desktop\asffsa\crender\common\source\helpers\helpers.c(54): warning C4715: 'textFileToCString' : not all control paths return a value
+     1>c:\users\joe\desktop\asffsa\crender\common\source\graphics\graphics.c(466): warning C4715: 'checkShaderCompilerErrors' : not all control paths return a value
+         Finished generating code
+     1>Graphics.obj : warning LNK4049: locally defined symbol ___glewGetUniformLocation imported
+     1>Graphics.obj : warning LNK4049: locally defined symbol ___glewAttachShader imported
+     1>Graphics.obj : warning LNK4049: locally defined symbol ___glewEnableVertexAttribArray imported
+     1>Graphics.obj : warning LNK4049: locally defined symbol ___glewUniform1i imported
+     1>Graphics.obj : warning LNK4049: locally defined symbol ___glewCreateProgram imported
+     1>Graphics.obj : warning LNK4049: locally defined symbol ___glewGetShaderiv imported
+     1>Graphics.obj : warning LNK4049: locally defined symbol ___glewGenBuffers imported
+     1>Graphics.obj : warning LNK4049: locally defined symbol ___glewUniform1f imported
+     1>Graphics.obj : warning LNK4049: locally defined symbol ___glewUniformMatrix4fv imported
+     1>Graphics.obj : warning LNK4049: locally defined symbol ___glewGetAttribLocation imported
+     1>Graphics.obj : warning LNK4049: locally defined symbol ___glewBufferData imported
+     1>Graphics.obj : warning LNK4049: locally defined symbol ___glewShaderSource imported
+     1>Graphics.obj : warning LNK4049: locally defined symbol ___glewUseProgram imported
+     1>Graphics.obj : warning LNK4049: locally defined symbol ___glewCompileShader imported
+     1>Graphics.obj : warning LNK4049: locally defined symbol ___glewLinkProgram imported
+     1>Graphics.obj : warning LNK4049: locally defined symbol ___glewGetShaderInfoLog imported
+     1>Graphics.obj : warning LNK4049: locally defined symbol ___glewCreateShader imported
+     1>Graphics.obj : warning LNK4049: locally defined symbol ___glewVertexAttribPointer imported
+     1>Graphics.obj : warning LNK4049: locally defined symbol ___glewActiveTexture imported
+     1>Graphics.obj : warning LNK4049: locally defined symbol ___glewBindBuffer imported
+     1>glew32s.lib(glew.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'glew32s.lib(glew.obj)' or at 'C:\Users\Joe\Desktop\asffsa\CRender\_Windows\Build\PUBLIC_RELEASE\vc120.pdb'; linking object as if no debug info
+         CRender.vcxproj -> C:\Users\Joe\Desktop\asffsa\CRender\_Windows\.\Build/PUBLIC_RELEASE\CRender.exe
+     1>Done Building Project "C:\Users\Joe\Desktop\asffsa\CRender\_Windows\CRender.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.78

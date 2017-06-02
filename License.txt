@@ -1,0 +1,6 @@
+Project makes use of the following opensource code libraries:
+GLFW,
+GLEW,
+uthash,
+lodepng,
+linmath
