@@ -1,5 +1,5 @@
 # CRender
-![alt tag](http://jfcameron.github.io/Images/GD2j_Sprites/Big.png "")
+![alt tag](http://jfcameron.github.io/Images/CRenderer_Windows_And_Android/Small.jpg "")
 
 ## Description:
 3D Renderer example program. Written strictly in ANSI C. Uses OpenGL ES 2.0. Builds for Win32 and Android via the NDK.
@@ -24,6 +24,7 @@ Textures and Shader programs can be loaded at runtime from the filesystem. Verte
 * [LinMath](https://github.com/datenwolf/linmath.h) - Mat4x4, Vector2-3 & Quaternion operations
 * [GLFW](http://www.glfw.org/) - OpenGL context initialization
 * [LodePNG](http://lodev.org/lodepng/) - PNG decoding library
+* [UTHash](https://troydhanson.github.io/uthash/) - Hashmap functionality, used in Graphics.c to store textures, shaders, models and associate them with a name
 
 *Some small source code changes may have been made to the above libraries in order to adhere to C89 standard.
 
