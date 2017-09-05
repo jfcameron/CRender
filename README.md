@@ -2,6 +2,9 @@
 ![alt tag](http://jfcameron.github.io/Images/CRenderer_Windows_And_Android/Small.jpg "")
 
 ## Description:
+![asdf](https://img.shields.io/badge/development%20status-closed-lightgrey.svg)
+![asdf](https://img.shields.io/badge/platforms-win32%20|%20android-lightgrey.svg)
+
 3D Renderer example program. Written strictly in ANSI C. Uses OpenGL ES 2.0. Builds for Win32 and Android via the NDK.
 
 
