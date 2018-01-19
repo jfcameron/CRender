@@ -5,7 +5,7 @@
 ![asdf](https://img.shields.io/badge/development%20status-closed-lightgrey.svg)
 ![asdf](https://img.shields.io/badge/platforms-win32%20|%20android-lightgrey.svg)
 
-3D Renderer example program. Written strictly in ANSI C. Uses OpenGL ES 2.0. Builds for Win32 and Android via the NDK.
+3D Renderer example program. Written strictly in ISO C90. Uses OpenGL ES 2.0. Builds for Win32 and Android via the NDK.
 
 
 ## Features:
