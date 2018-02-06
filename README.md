@@ -13,7 +13,7 @@ Resource management for Textures, Shader programs, Vertex buffers.
 
 Mat4x4 and Vector operations for calculating the MVP.
 
-Textures and Shader programs can be loaded at runtime from the filesystem. Vertex buffers data must come from source code. Definitions for unit length quad and cube are provided.
+Textures and Shader programs are loaded at runtime from the filesystem. Vertex buffer data is read from static memory. Definitions for unit length quad and cube are provided.
 
 ## Building the project:
 ### Win32
