@@ -29,7 +29,7 @@ Textures and Shader programs can be loaded at runtime from the filesystem. Verte
 * [LodePNG](http://lodev.org/lodepng/) - PNG decoding library
 * [UTHash](https://troydhanson.github.io/uthash/) - Hashmap functionality, used in Graphics.c to store textures, shaders, models and associate them with a name
 
-*Some small source code changes may have been made to the above libraries in order to adhere to C89 standard.
+Small changes were made to the used libraries in order to adhere to C90.
 
 ## Tools used:
 * The Win32 branch is setup for [Visual Studio](https://www.visualstudio.com/)
