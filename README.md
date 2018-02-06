@@ -27,7 +27,7 @@ Textures and Shader programs can be loaded at runtime from the filesystem. Verte
 * [LinMath](https://github.com/datenwolf/linmath.h) - Mat4x4, Vector2-3 & Quaternion operations
 * [GLFW](http://www.glfw.org/) - OpenGL context initialization
 * [LodePNG](http://lodev.org/lodepng/) - PNG decoding library
-* [UTHash](https://troydhanson.github.io/uthash/) - Hashmap functionality, used in Graphics.c to store textures, shaders, models and associate them with a name
+* [UTHash](https://troydhanson.github.io/uthash/) - map structure
 
 ## Tools used:
 * The Win32 branch is setup for [Visual Studio](https://www.visualstudio.com/)
